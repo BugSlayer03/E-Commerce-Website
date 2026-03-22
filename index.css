@@ -1,0 +1,286 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial;
+}
+
+.home-page {
+    margin-top: 65px;
+}
+
+.overview {
+    width: 100%;
+    height: 500px;
+    /* display: flex; */
+    overflow: hidden;
+    position: relative;
+    /* cursor: pointer; */
+    background-color: lightblue;
+}
+
+.slider{
+  display: flex;
+  transition: transform 0.5s ease;
+}
+
+.slide{
+  min-width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  align-items: center;
+  padding: 20px;
+}
+
+.left-icon{
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  height: 72px;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.right-icon{
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  height: 72px;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.text-section{
+  /* border: 1px solid black; */
+  /* left: 27%; */
+  /* position: absolute; */
+  height: 100%;
+  font-size: 50px;
+  /* width: 250px; */
+  /* top: 27%; */
+  font-weight: bold;
+  max-width: 400px;
+  display: flex;
+  align-items: center;
+}
+
+.img-section{
+  /* position: absolute; */
+  height: auto;
+  max-width: 100%;
+  /* left: 39%; */
+  /* border: 1px solid black; */
+  display: flex;
+  align-items: center;
+}
+
+.img-section-img{
+  height: auto;
+  max-width: 400px;
+}
+
+/* .img-overview {
+    height: 500px;
+    width: 500px;
+    object-fit: cover;
+    flex-shrink: 0;
+}
+
+.slider {
+    display: flex;
+    width: max-content;
+    animation: scroll 30s linear infinite;
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-50%);
+    }
+} */
+
+.product-category {
+    margin-top: 10px;
+    height: 450px;
+    width: 100%;
+    /* background-color: lightpink; */
+    /* background-color: cornsilk; */
+}
+
+.product-category p {
+    margin-top: 10px;
+    margin-left: 10px;
+    color: #0f172a;
+    font-size: 40px;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+}
+
+.product-category p button {
+    width: 120px;
+    height: 40px;
+    background-color: darkblue;
+    color: white;
+    margin-right: 10px;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 10px;
+    border: none;
+}
+
+.product-category img {
+    height: 340px;
+    width: 360px;
+    margin: 4px;
+    cursor: pointer;
+}
+
+.products .products-grid{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+}
+
+@media (max-width: 800px) {
+  .products .products-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 575px) {
+  .products .products-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 450px) {
+  .products .products-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.products{
+    margin-top: 62px;
+}
+
+.products .product-container {
+  padding-top: 40px;
+  padding-bottom: 25px;
+  padding-left: 25px;
+  padding-right: 25px;
+
+  border-right: 1px solid rgb(240, 240, 240);
+  border-bottom: 1px solid rgb(240, 240, 240);
+
+  display: flex;
+  flex-direction: column;
+}
+
+.products .product-image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  height: 180px;
+  margin-bottom: 20px;
+}
+
+.products .product-image {
+  /* Images overflow the container by default. To prevent this, set
+     max-width and max-height to 100% to stay inside container. */
+  max-width: 100%;
+  max-height: 100%;
+  border-radius: 5px;
+}
+
+.products .product-name {
+  height: 40px;
+  margin-bottom: 5px;
+}
+
+.products .product-rating-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.products .product-rating-stars {
+  width: 100px;
+  margin-right: 6px;
+}
+
+.products .product-rating-count {
+  color: rgb(25, 135, 84);
+  cursor: auto;
+  margin-top: 3px;
+}
+
+.products .product-price {
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.products .product-quantity-container {
+  margin-bottom: 17px;
+}
+
+.products .product-spacer {
+  flex: 1;
+}
+
+.products .added-to-cart {
+  color: rgb(25, 135, 84);
+  font-size: 16px;
+
+  display: flex;
+  align-items: center;
+  margin-bottom: 8px;
+
+  /* At first, the "Added to cart" message will
+     be invisible. Use JavaScript to change the
+     opacity and make it visible. */
+  opacity: 0;
+}
+
+.products .added-to-cart img {
+  height: 19px;
+  margin-right: 6px;
+}
+
+.products .add-to-cart-button {
+  width: 100%;
+  padding: 8px;
+  height: 34px;
+  margin-top: 1px;
+  background-color: darkblue;
+  color: white;
+  font-size: 15px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.add-to-cart-button:hover{
+    background-color: rgb(32, 32, 184);
+}
+
+select {
+  color: rgb(33, 33, 33);
+  background-color: rgb(255, 255, 255);
+  border: 1px solid rgb(200, 200, 200);
+  border-radius: 5px;
+  padding: 3px 5px;
+  font-size: 15px;
+  cursor: pointer;
+  box-shadow: 0 1px 3px rgba(200, 200, 200, 0.2);
+}
+
+select:focus,
+input:focus {
+  outline: 2px solid rgb(25, 135, 84);
+}

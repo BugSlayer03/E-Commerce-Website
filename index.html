@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShopNest</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="general.css">
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <div class="header">
+        <div class="left-section">
+            <a href="index.html" class="header-link">
+                <img src="logo.png" class="logo" alt="logo">
+            </a>
+        </div>
+
+        <div class="middle-section">
+            <input type="text" class="search-bar" placeholder="Search">
+
+            <button class="search-button">
+                <img src="icons/search-icon.png" class="search-icon">
+            </button>
+        </div>
+
+        <div class="right-section">
+            <a href="orders.html" class="orders-link header-link">
+                <span class="orders-text">Orders</span>
+            </a>
+
+            <a href="checkout.html" class="cart-link header-link">
+                <img src="icons/cart-icon.png" class="cart-icon">
+                <div class="cart-quantity">2</div>
+                <div class="cart-text">Cart</div>
+            </a>
+        </div>
+
+    </div>
+
+    <div class="home-page">
+        <div class="overview">
+            <img src="icons/angle-left-solid.png" alt="" class="left-icon" onclick="prevSlide()">
+            <img src="icons/angle-right-solid.png" alt="" class="right-icon" onclick="nextSlide()">
+
+            <div class="slider" id="slider">
+                <div class="slide">
+                    <div class="text-section">
+                        Headphones starting @ ₹799
+                    </div>
+
+                    <div class="img-section">
+                        <img src="images/gadgets/Headphone.png" alt="" class="img-section-img">
+                    </div>
+                </div>
+
+                <div class="slide">
+                    <div class="text-section">
+                        Best Selling Kitchen Items
+                    </div>
+
+                    <div class="img-section">
+                        <img src="images/Home appliances/Curd-maker.png" alt="" class="img-section-img">
+                    </div>
+                </div>
+
+                <div class="slide">
+                    <div class="text-section">
+                        Beauty Products for all
+                    </div>
+
+                    <div class="img-section">
+                        <img src="images/beauty/Khadi2.png" alt="" class="img-section-img">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <hr>
+
+        <div class="product-category">
+            <p>
+                Next-Gen Essentials
+                <button onclick="window.location.href='gadgets.html'">See More</button>
+            </p>
+            <img src="images/gadgets/Boat-speaker.png" alt="">
+            <img src="images/gadgets/Rechargable-wire-mouse.png" alt="">
+            <img src="images/gadgets/Headphone.png" alt="">
+            <img src="images/gadgets/Power-Bank.png" alt="">
+        </div>
+
+        <hr>
+
+        <div class="product-category">
+            <p>
+                Pure.Simple.Beautiful
+                <button onclick="window.location.href='beauty.html'">See More</button>
+            </p>
+            <img src="images/beauty/Cetaphil.png" alt="">
+            <img src="images/beauty/Dove-men.png" alt="">
+            <img src="images/beauty/Gentlemen.png" alt="">
+            <img src="images/beauty/Khadi_sand.png" alt="">
+        </div>
+
+        <hr>
+
+        <div class="product-category">
+            <p>
+                Fresh Picks, Everyday
+                <button onclick="window.location.href='foods.html'">See More</button>
+            </p>
+            <img src="images/foods/Nutella.png" alt="">
+            <img src="images/foods/Dates.png" alt="">
+            <img src="images/foods/Muesli.png" alt="">
+            <img src="images/foods/Dry Fruits.png" alt="">
+        </div>
+
+        <hr>
+
+        <!-- <div class="product-category">
+            <p>
+                Escape into Books..
+                <button onclick="window.location.href='books.html'">See More</button>
+            </p>
+            <img src="images/books/Eat that frog.jpg" alt="" class="books-img">
+            <img src="images/books/Ikigai.jpg" alt="" class="books-img">
+            <img src="images/books/Brian Tracy.jpg" alt="" class="books-img">
+            <img src="images/books/Atomic Habits.jpg" alt="" class="books-img">
+        </div> -->
+
+        <!-- <hr> -->
+
+        <div class="product-category">
+            <p>
+                Upgrade Your Home
+                <button onclick="window.location.href='home-appliances.html'">See More</button>
+            </p>
+            <img src="images/Home appliances/Air-fryer.png" alt="">
+            <img src="images/Home appliances/Kettle.png" alt="">
+            <img src="images/Home appliances/Oven.png" alt="">
+            <img src="images/Home appliances/Toaster.png" alt="">
+        </div>
+    </div>
+    
+    <script src="scripts/index.js"></script>
+    <script src="scripts/cart.js"></script>
+</body>
+
+</html>
