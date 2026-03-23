@@ -53,13 +53,8 @@ body {
 }
 
 .text-section{
-  /* border: 1px solid black; */
-  /* left: 27%; */
-  /* position: absolute; */
   height: 100%;
   font-size: 50px;
-  /* width: 250px; */
-  /* top: 27%; */
   font-weight: bold;
   max-width: 400px;
   display: flex;
@@ -81,45 +76,80 @@ body {
   max-width: 400px;
 }
 
-/* .img-overview {
-    height: 500px;
-    width: 500px;
-    object-fit: cover;
-    flex-shrink: 0;
-}
-
-.slider {
-    display: flex;
-    width: max-content;
-    animation: scroll 30s linear infinite;
-}
-
-@keyframes scroll {
-    0% {
-        transform: translateX(0);
+@media (max-width:800px){
+    .slide{
+        flex-direction: column;
+        text-align: center;
+        gap: 20px;
     }
 
-    100% {
-        transform: translateX(-50%);
+    .text-section{
+        font-size: 28px;
+        max-width: 90%;
+        justify-content: center;
     }
-} */
 
-.product-category {
-    margin-top: 10px;
-    height: 450px;
-    width: 100%;
-    /* background-color: lightpink; */
-    /* background-color: cornsilk; */
+    .img-section img{
+        max-width: 250px;
+    }
+
+    .overview{
+        height: auto;
+        padding: 40px 0;
+    }
 }
 
-.product-category p {
+@media (max-width: 450px){
+    .text-section{
+        font-size: 20px;
+    }
+
+    .img-section img{
+        max-width: 180px;
+    }
+
+    .left-icon,
+    .right-icon{
+        height: 40px;
+    }
+}
+
+@media (max-width: 800px){
+    .product-category img{
+        width: 31%;
+    }    
+}
+
+@media (max-width: 575px){
+    .product-category img{
+        width: 48%;
+    }
+}
+
+@media (max-width: 450px){
+    .product-category img{
+        width: 100%;
+    }
+}
+
+.product-category{
     margin-top: 10px;
-    margin-left: 10px;
-    color: #0f172a;
-    font-size: 40px;
-    font-weight: bold;
+    padding: 10px;
+    height: auto;
+}
+
+.product-category p{
+    font-size: 28px;
+    flex-wrap: wrap;
+    gap: 10px;
     display: flex;
-    justify-content: space-between;
+    justify content: space-between;
+    align-items: center;
+}
+
+.product-category img{
+    width: 23%;
+    height: auto;
 }
 
 .product-category p button {
@@ -133,14 +163,10 @@ body {
     cursor: pointer;
     margin-top: 10px;
     border: none;
+    flex-shrink: 0;
 }
 
-.product-category img {
-    height: 340px;
-    width: 360px;
-    margin: 4px;
-    cursor: pointer;
-}
+
 
 .products .products-grid{
     display: grid;
