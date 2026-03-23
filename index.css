@@ -310,3 +310,49 @@ select:focus,
 input:focus {
   outline: 2px solid rgb(25, 135, 84);
 }
+
+.footer{
+  height: 400px;
+  width: 100%;
+  background-color: rgb(69, 69, 69);
+  margin-top: 100px;
+  color: white;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.upper{
+  /* padding: 40px; */
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  height: 90%;
+  padding: 60px;
+}
+
+.lower{
+  /* padding: 20px; */
+  text-align: center;
+  border-top: 1px solid gray;
+}
+
+ul{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+ul li{
+  margin-bottom: 12px;
+  cursor: pointer;
+}
+
+ul li:hover{
+  text-decoration: underline;
+}
+
+ul li a{
+  color: white;
+  text-decoration: none;
+}
