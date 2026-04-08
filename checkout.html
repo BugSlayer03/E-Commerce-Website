@@ -1,222 +1,3 @@
-<!-- <!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Checkout</title>
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
-
-    <link rel="stylesheet" href="general.css">
-    <link rel="stylesheet" href="checkout-header.css">
-    <link rel="stylesheet" href="checkout.css">
-</head>
-
-<body>
-    <div class="checkout-header">
-        <div class="header-content">
-            <div class="checkout-header-left-section">
-                <a href="index.html" class="header-link">
-                    <img src="logo.png" class="logo" alt="logo">
-                </a>
-            </div>
-
-            <div class="checkout-header-middle-section">
-                Checkout (<a class="return-to-home-link" href="index.html">3 items</a>)
-            </div>
-        </div>
-    </div>
-
-    <div class="checkout-page">
-        <div class="page-title">Review your order</div>
-
-        <div class="checkout-grid">
-            <div class="order-summary">
-                <div class="cart-item-container">
-                    <div class="delivery-date">
-                        Delivery date: Sunday, March 29
-                    </div>
-
-                    <div class="cart-item-details-grid">
-                        <img class="product-image" src="images/Home appliances/Air-fryer.png" />
-
-                        <div class="cart-item-details">
-                            <div class="product-name">
-                                Pigeon Digital Air Fryer
-                            </div>
-                            <div class="product-price">
-                                ₹2899
-                            </div>
-                            <div class="product-quantity">
-                                <span>
-                                    Quantity: <span class="quantity-label">2</span>
-                                </span>
-                                <span class="update-quantity-link link-primary">
-                                    Update
-                                </span>
-                                <span class="delete-quantity-link link-primary">
-                                    Delete
-                                </span>
-                            </div>
-                        </div>
-
-                        <div class="delivery-options">
-                            <div class="delivery-options-title">
-                                Choose a delivery option:
-                            </div>
-                            <div class="delivery-option">
-                                <input type="radio" checked class="delivery-option-input" name="delivery-option-1" />
-                                <div>
-                                    <div class="delivery-option-date">
-                                        Sunday, March 29
-                                    </div>
-                                    <div class="delivery-option-price">
-                                        FREE Shipping
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="delivery-option">
-                                <input type="radio" class="delivery-option-input" name="delivery-option-1" />
-                                <div>
-                                    <div class="delivery-option-date">
-                                        Thursday, March 26
-                                    </div>
-                                    <div class="delivery-option-price">
-                                        ₹449 - Shipping
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="delivery-option">
-                                <input type="radio" class="delivery-option-input" name="delivery-option-1" />
-                                <div>
-                                    <div class="delivery-option-date">
-                                        Monday, March 23
-                                    </div>
-                                    <div class="delivery-option-price">
-                                        ₹899 - Shipping
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="cart-item-container">
-                    <div class="delivery-date">
-                        Delivery date: Sunday, March 29
-                    </div>
-
-                    <div class="cart-item-details-grid">
-                        <img class="product-image" src="images/gadgets/Radio.png" />
-
-                        <div class="cart-item-details">
-                            <div class="product-name">
-                                Saregama Carvan Mini Hindi Music Player
-                            </div>
-                            <div class="product-price">
-                                ₹2490
-                            </div>
-                            <div class="product-quantity">
-                                <span>
-                                    Quantity: <span class="quantity-label">1</span>
-                                </span>
-                                <span class="update-quantity-link link-primary">
-                                    Update
-                                </span>
-                                <span class="delete-quantity-link link-primary">
-                                    Delete
-                                </span>
-                            </div>
-                        </div>
-
-                        <div class="delivery-options">
-                            <div class="delivery-options-title">
-                                Choose a delivery option:
-                            </div>
-
-                            <div class="delivery-option">
-                                <input type="radio" class="delivery-option-input" name="delivery-option-2" />
-                                <div>
-                                    <div class="delivery-option-date">
-                                        Sunday, March 29
-                                    </div>
-                                    <div class="delivery-option-price">
-                                        FREE Shipping
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="delivery-option">
-                                <input type="radio" checked class="delivery-option-input" name="delivery-option-2" />
-                                <div>
-                                    <div class="delivery-option-date">
-                                        Thursday, March 26
-                                    </div>
-                                    <div class="delivery-option-price">
-                                        ₹449 - Shipping
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="delivery-option">
-                                <input type="radio" class="delivery-option-input" name="delivery-option-2" />
-                                <div>
-                                    <div class="delivery-option-date">
-                                        Monday, March 23
-                                    </div>
-                                    <div class="delivery-option-price">
-                                        ₹899 - Shipping
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="payment-summary">
-                <div class="payment-summary-title">
-                    Payment Summary
-                </div>
-
-                <div class="payment-summary-row">
-                    <div>Items (3):</div>
-                    <div class="payment-summary-money">₹8288</div>
-                </div>
-
-                <div class="payment-summary-row">
-                    <div>Shipping &amp; handling:</div>
-                    <div class="payment-summary-money">0</div>
-                </div>
-
-                <div class="payment-summary-row subtotal-row">
-                    <div>Total before tax:</div>
-                    <div class="payment-summary-money">₹8288</div>
-                </div>
-
-                <div class="payment-summary-row">
-                    <div>Estimated tax (10%):</div>
-                    <div class="payment-summary-money">₹828.80</div>
-                </div>
-
-                <div class="payment-summary-row total-row">
-                    <div>Order total:</div>
-                    <div class="payment-summary-money">₹9116.8</div>
-                </div>
-
-                <button class="place-order-button button-primary">
-                    Place your order
-                </button>
-            </div>
-        </div>
-    </div>
-
-    <script src="scripts/cart.js"></script>
-</body> -->
-
-<!-- </html> -->
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -253,8 +34,8 @@
         <div class="page-title">Review your order</div>
 
         <div class="checkout-grid">
-            <div class="order-summary">
-                <div class="cart-item-container">
+            <div class="order-summary" id="cart-container">
+                <!-- <div class="cart-item-container">
                     <div class="delivery-date">
                         Delivery date: <span class="curr-date"></span>
                     </div>
@@ -391,7 +172,7 @@
                             </div>
                         </div>
                     </div>
-                </div>
+                </div> -->
             </div>
 
             <div class="payment-summary">
@@ -434,6 +215,80 @@
     <script src="scripts/cart.js"></script>
 
     <script>
+        const Cart = JSON.parse(localStorage.getItem("cart")) || [];
+        const Container = document.getElementById("cart-container");
+
+        Container.innerHTML = "";
+
+        Cart.forEach(item => {
+            Container.innerHTML +=
+                `
+                <div class="cart-item-container">
+                    <div class="delivery-date">
+                        Delivery date: <span class="curr-date"></span>
+                    </div>
+                    <div class="cart-item-details-grid">
+                        <img class="product-image" src="${item.image}" />
+
+                        <div class="cart-item-details">
+                            <div class="product-name">${item.name}</div>
+                            <div class="product-price">${item.price}</div>
+                            <div class="product-quantity">
+                                <span>
+                                    Quantity: <span class="quantity-label">${item.quantity}</span>
+                                </span>
+                                <span class="update-quantity-link link-primary">
+                                    Update
+                                </span>
+                                <span class="delete-quantity-link link-primary">
+                                    Delete
+                                </span>
+                            </div>
+                        </div>
+
+                        <div class="delivery-options">
+                            <div class="delivery-options-title">
+                                Choose a delivery option:
+                            </div>
+                            <div class="delivery-option">
+                                <input type="radio" class="delivery-option-input" name="delivery-option-1" />
+                                <div>
+                                    <div class="delivery-option-date">
+                                        <span class="curr-date1"></span>
+                                    </div>
+                                    <div class="delivery-option-price">
+                                        FREE Shipping
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="delivery-option">
+                                <input type="radio" class="delivery-option-input" name="delivery-option-1" />
+                                <div>
+                                    <div class="delivery-option-date">
+                                        <span class="curr-date2"></span>
+                                    </div>
+                                    <div class="delivery-option-price">
+                                        ₹449 - Shipping
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="delivery-option">
+                                <input type="radio" class="delivery-option-input" name="delivery-option-1" />
+                                <div>
+                                    <div class="delivery-option-date">
+                                        <span class="curr-date3"></span>
+                                    </div>
+                                    <div class="delivery-option-price">
+                                        ₹899 - Shipping
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            `;
+        });
+
         const baseDate = new Date();
 
         function getFormattedDate(daysToAdd) {
@@ -463,7 +318,6 @@
 
         document.querySelectorAll('.curr-date3')
             .forEach(el => el.innerText = formattedDate3);
-
     </script>
 </body>
 
