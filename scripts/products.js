@@ -175,7 +175,7 @@ const products = {
         {
             name: "Pintola High Protein Muesli 1Kg",
             price:645,
-            image:"images/gadgets/HEPA-purifier.png",
+            image:"images/foods/Muesli.png",
             rating:"images/ratings/rating-40.png",
             reviews:90
         },
