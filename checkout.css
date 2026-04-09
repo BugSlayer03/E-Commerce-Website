@@ -188,7 +188,17 @@
   cursor: pointer;
 }
 
+.update-quantity-link:hover{
+  color: red;
+  text-decoration: underline;
+}
+
 .delete-quantity-link{
   color: blue;
   cursor: pointer;
+}
+
+.delete-quantity-link:hover{
+  color: red;
+  text-decoration: underline;
 }
