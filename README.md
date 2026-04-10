@@ -2,7 +2,7 @@
 
 A fully functional and responsive **E-Commerce Web Application** built using modern frontend technologies. This project demonstrates real-world shopping features like product browsing, cart management, and a clean user interface.
 
-## 🚀 Features
+## Features
 
 *  **Product Listing Page** – Browse a variety of products with images, prices, and details
 *  **Add to Cart Functionality** – Add/remove items dynamically
@@ -11,13 +11,13 @@ A fully functional and responsive **E-Commerce Web Application** built using mod
 *  **Responsive Design** – Works across devices (mobile, tablet, desktop)
 *  **Fast & Interactive UI** – Smooth user experience using JavaScript
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 * **HTML5** – Structure
 * **CSS3** – Styling and layout
 * **JavaScript (Vanilla JS)** – Logic and interactivity
 
-## 💡 Key Learnings
+## Key Learnings
 
 * DOM manipulation using JavaScript
 * Handling user interactions (click events, dynamic updates)
@@ -25,7 +25,7 @@ A fully functional and responsive **E-Commerce Web Application** built using mod
 * Building reusable UI components
 * Structuring a real-world frontend project
 
-## 🔮 Future Improvements
+## Future Improvements
 
 * Backend integration (Node.js / Express / MongoDB)
 * User authentication (Login/Signup)
@@ -33,4 +33,4 @@ A fully functional and responsive **E-Commerce Web Application** built using mod
 * Order history and user dashboard
 * Improved filtering and sorting
 
-⭐ If you like this project, consider giving it a star!
+ If you like this project, consider giving it a star!
